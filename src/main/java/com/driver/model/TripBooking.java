@@ -110,7 +110,7 @@ public class TripBooking{
     }
 
     @JoinColumn
-    @ManyToOne
+    @ManyToOne(cascade = CascadeType.ALL)
     private Customer customer;
 
     public void setCustomer(Customer customer) {
