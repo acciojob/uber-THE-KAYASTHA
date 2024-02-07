@@ -48,7 +48,7 @@ public class CustomerServiceImpl implements CustomerService {
 		TripBooking tripBooking=new TripBooking(fromLocation,toLocation,distanceInKm);
 		int driverId=Integer.MAX_VALUE;
 		for(Driver i:drivers){
-			if(i.getDriverId()<driverId && i.getCab().isAvailable()==true){
+			if(i.getDriverId()<driverId && i.getCab().getAvailable()==true){
 				driverId=i.getDriverId();
 			}
 
